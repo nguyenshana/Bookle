@@ -8,7 +8,7 @@ looks for the online version of the book by searching it up in other sites.
 
 ## How to run this app locally:
 ### Installations
-Install flask
+pip install flask
 
 ### Running the app
 In terminal:
