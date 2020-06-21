@@ -6,7 +6,7 @@ Bookle is a website designed to make it easier to find eBooks. Using GoodReads' 
 looks for the online version of the book by searching it up in other sites.
 
 
-## For running this app locally:
+## How to run this app locally:
 ### Installations
 Install flask
 
