@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	{% for i in range(1, title|length, 1) %}
+		<div class="books">
+			<div class="card mb-4">
+			  <div class="row no-gutters">
+			    <div class="col-md-4">
+			      <img src={{ image_url[i] }} class="card-img" style="">
+			    </div>
+			    <div class="col-md-8">
+			      <div class="card-body">
+			        <h5 class="card-title"><strong>{{ title[i] }}</strong></h5>
+			        <h6 class="card-title">Author: {{ author[i] }}</h6>
+
+			        <br/>
+
+		        	<p class="card-text">Check these resources:</p>
+				    <p class="card-text"><a href={{ epublink[i] }} target="_blank">EpubLink</a></p>
+				    <p class="card-text"><a href={{ openliblink[i] }} target="_blank">Open Library</a></p>
+				    <p class="card-text"><a href={{ sjpllink[i] }} target="_blank">San Jose Public Library</a></p>
+				    <p class="card-text"><a href={{ googlebookslink[i] }} target="_blank">($) Google Books</a></p>
+			        <p class="card-text"><a href={{ authorURL[i] }} target="_blank"><small><i>Other books by {{ author[i] }}</i></small></a></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+    {% endfor %}
+
+
+    {% include 'footer.html' %}
+
+{% endblock %}
